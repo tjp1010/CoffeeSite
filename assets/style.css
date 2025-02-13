@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: broder-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ header .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-links li {
+    margin: 0 15px;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+header .nav-links a:hover{
+    text-decoration: underline;
+}
+
+header .cta-button .btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+header .cta-button .btn:hover {
+    background-color: #e55347;
+}
+
+/* Hero Section */
+
+.hero {
+    background: url('img/coffee3.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff6347;
+    color:white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e55347;
+}
+
+/* about section */
+
+.about {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* testimonials */
+
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(10px);
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.testimonial-card h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+
+}
+
+footer .footer-links {
+    margin: 20px 0;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-links li {
+    margin: 0 15px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .social-links {
+    margin-top: 20px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+/* Responsive Design media queries */
+
+@media (max-width:768px) {
+    header nav {
+        flex-direction: column;
+        text-align: column;
+    }
+
+    header .nav-links {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    /* .testimonial-cards {
+        flex-direction: column;
+        gap: 20px;
+    } */
+
+    .about-image img {
+        max-width: 100%;
+    }
+
+    footer .footer-links ul {
+        flex-direction: column;
+    }
+
+
+    footer .social-links a {
+        font-size: 16px;
+    }
+}
